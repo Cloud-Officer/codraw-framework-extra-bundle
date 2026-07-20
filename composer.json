@@ -65,5 +65,8 @@
         "branch-alias": {
             "dev-master": "0.39-dev"
         }
+    },
+    "replace": {
+        "draw/framework-extra-bundle": "self.version"
     }
 }
