@@ -34,12 +34,11 @@ We recommend that you add this to your composer.json scripts section before the 
 }
 ```
 
-
 ## Configuration
 
 Here is a example of the configuration:
 
-```
+```yaml
 draw_open_api: 
     enableDoctrineSupport: null #null will auto detect if DoctrineBundle is install and consider it true
     convertQueryParameterToAttribute: false
@@ -95,7 +94,7 @@ draw_open_api:
 You must also add the annotation **Draw\Component\OpenApi\Schema\QueryParameter** to your controller. This will provide the documentation
 information for Open Api and also configure which query parameters should be injected.
 
-```
+```php
 /**
  * @param string $param1
  */
@@ -125,7 +124,7 @@ The Serialization annotation is also use for the Open Api documentation, the hea
 
 If your controller return null the status code will be set to 204 by default (not content).
 
-```
+```php
 /**
  * @Draw\Bundle\OpenApiBundle\Response\Serialization(
  *     statusCode=201,
