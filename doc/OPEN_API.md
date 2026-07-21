@@ -1,9 +1,9 @@
 # Open Api
 
-This is for the integration of [codraw/open-api](https://github.com/mpoiriert/open-api)
+This is for the integration of [draw/open-api](https://github.com/mpoiriert/open-api)
 
 The first objective is to be able to generate the Open Api v2 documentation with minimum effort by the programmer.
-The codraw/open-api provide a multitude of extractor to get the information where it can (PHP for example).
+The draw/open-api provide a multitude of extractor to get the information where it can (PHP for example).
 
 The integration with symfony allow you to use most of the **Draw\Component\OpenApi\Schema** (alias @OpenApi) as annotation above
 your controller method to document them.
@@ -34,11 +34,12 @@ We recommend that you add this to your composer.json scripts section before the 
 }
 ```
 
+
 ## Configuration
 
 Here is a example of the configuration:
 
-```yaml
+```
 draw_open_api: 
     enableDoctrineSupport: null #null will auto detect if DoctrineBundle is install and consider it true
     convertQueryParameterToAttribute: false
@@ -94,7 +95,7 @@ draw_open_api:
 You must also add the annotation **Draw\Component\OpenApi\Schema\QueryParameter** to your controller. This will provide the documentation
 information for Open Api and also configure which query parameters should be injected.
 
-```php
+```
 /**
  * @param string $param1
  */
@@ -124,7 +125,7 @@ The Serialization annotation is also use for the Open Api documentation, the hea
 
 If your controller return null the status code will be set to 204 by default (not content).
 
-```php
+```
 /**
  * @Draw\Bundle\OpenApiBundle\Response\Serialization(
  *     statusCode=201,
