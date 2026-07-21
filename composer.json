@@ -1,5 +1,6 @@
 {
     "name": "codraw/framework-extra-bundle",
+    "version": "0.39.x-dev",
     "description": "[WIP] Main bundle to configure draw component in symfony framework",
     "license": "MIT",
     "type": "library",
@@ -80,8 +81,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "0.39-dev",
-            "dev-refactoring": "0.39-dev"
+            "dev-master": "0.39-dev"
         }
     },
     "replace": {
