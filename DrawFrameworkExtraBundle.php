@@ -13,7 +13,9 @@ class DrawFrameworkExtraBundle extends Bundle
     {
         $containerExtension = $this->getContainerExtension();
 
-        \assert($containerExtension instanceof DrawFrameworkExtraExtension);
+        if (!$containerExtension instanceof DrawFrameworkExtraExtension) {
+            throw new \RuntimeException(\sprintf('The container extension must be an instance of "%s", "%s" given.', DrawFrameworkExtraExtension::class, get_debug_type($containerExtension)));
+        }
 
         foreach ($containerExtension->getIntegrations() as $integration) {
             if ($integration instanceof ContainerBuilderIntegrationInterface) {

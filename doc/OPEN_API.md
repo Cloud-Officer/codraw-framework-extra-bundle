@@ -52,7 +52,7 @@ draw_open_api:
     schema: #The schema section is not validate but it must match the Open Api format and will be the starting point of the generated doc
         info:
             title: 'Documentation for Acme API'
-            description: 'This is the descriptoin of the 'Acme API'
+            description: "This is the description of the 'Acme API'"
             termsOfService: 'N\A'
             contact: ~
             version: "5.0"
@@ -71,7 +71,7 @@ public function defaultAction()
 ```
 
 ```PHP
-#[OpenApi\Operation(operationId: 'default', tags: ["Acme"])
+#[OpenApi\Operation(operationId: 'default', tags: ["Acme"])]
 public function defaultAction()
 {
    //...
