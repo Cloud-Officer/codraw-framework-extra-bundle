@@ -1,6 +1,6 @@
 # Draw Framework Extra Bundle
 
-This bundle is used to integrate draw/* component in Symfony.
+This bundle is used to integrate codraw/* component in Symfony.
 
 Everything is configurable via the **draw_framework_extra** namespace.
 

@@ -1,9 +1,9 @@
 # Open Api
 
-This is for the integration of [draw/open-api](https://github.com/mpoiriert/open-api)
+This is for the integration of [codraw/open-api](https://github.com/mpoiriert/open-api)
 
 The first objective is to be able to generate the Open Api v2 documentation with minimum effort by the programmer.
-The draw/open-api provide a multitude of extractor to get the information where it can (PHP for example).
+The codraw/open-api provide a multitude of extractor to get the information where it can (PHP for example).
 
 The integration with symfony allow you to use most of the **Draw\Component\OpenApi\Schema** (alias @OpenApi) as annotation above
 your controller method to document them.
