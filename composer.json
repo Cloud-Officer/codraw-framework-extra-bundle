@@ -20,9 +20,9 @@
         "ext-json": "*",
         "codraw/core": "^0.39",
         "codraw/dependency-injection": "^0.39",
-        "symfony/config": "^6.4.0",
-        "symfony/dependency-injection": "^6.4.0",
-        "symfony/http-kernel": "^6.4.0"
+        "symfony/config": "^7.4.0",
+        "symfony/dependency-injection": "^7.4.0",
+        "symfony/http-kernel": "^7.4.0"
     },
     "require-dev": {
         "codraw/application": "^0.39",
@@ -48,11 +48,11 @@
         "pelago/emogrifier": "^8.0",
         "phpunit/phpunit": "^12.5",
         "psr/log": "^3",
-        "symfony/event-dispatcher": "^6.4.0",
-        "symfony/http-foundation": "^6.4.0",
-        "symfony/security-bundle": "^6.4.0",
-        "symfony/security-core": "^6.4.0",
-        "symfony/twig-bundle": "^6.4.0"
+        "symfony/event-dispatcher": "^7.4.0",
+        "symfony/http-foundation": "^7.4.0",
+        "symfony/security-bundle": "^7.4.0",
+        "symfony/security-core": "^7.4.0",
+        "symfony/twig-bundle": "^7.4.0"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
@@ -67,6 +67,6 @@
         }
     },
     "replace": {
-        "draw/framework-extra-bundle": "self.version"
+        "codraw/framework-extra-bundle": "self.version"
     }
 }

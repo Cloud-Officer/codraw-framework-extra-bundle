@@ -40,7 +40,7 @@ class DrawFrameworkExtraBundleTest extends TestCase
         $containerBuilder = $this->createMock(ContainerBuilder::class);
 
         $containerBuilder
-            ->expects(static::exactly(10))
+            ->expects($this->exactly(10))
             ->method('addCompilerPass')
             ->with(
                 ...static::withConsecutive(
@@ -100,21 +100,21 @@ class DrawFrameworkExtraBundleTest extends TestCase
         ;
 
         $containerBuilder
-            ->expects(static::once())
+            ->expects($this->once())
             ->method('hasExtension')
             ->with('security')
             ->willReturn(true)
         ;
 
         $containerBuilder
-            ->expects(static::once())
+            ->expects($this->once())
             ->method('getExtension')
             ->with('security')
             ->willReturn($extension = $this->createMock(SecurityExtension::class))
         ;
 
         $extension
-            ->expects(static::exactly(2))
+            ->expects($this->exactly(2))
             ->method('addAuthenticatorFactory')
             ->with(
                 ...static::withConsecutive(
