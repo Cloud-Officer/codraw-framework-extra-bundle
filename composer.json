@@ -67,6 +67,6 @@
         }
     },
     "replace": {
-        "codraw/framework-extra-bundle": "self.version"
+        "draw/framework-extra-bundle": "self.version"
     }
 }
